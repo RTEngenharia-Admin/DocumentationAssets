@@ -58,7 +58,7 @@
 
         svg.call(zoom); // Apply zoom to svg
 
-        d3.json("/route-graph").then(function (graph) {
+        d3.json("https://rtengenharia-admin.github.io/DocumentationAssets/stock_system_route-graph.json").then(function (graph) {
           const simulation = d3
             .forceSimulation()
             .force(
